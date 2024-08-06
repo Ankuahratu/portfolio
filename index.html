@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankush's Portfolio</title>
+    <link rel="stylesheet" href="/portfolio/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Ankush's Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="about">
+            <div class="container">
+                <h2>About Me</h2>
+                <img src="/portfolio/WhatsApp Image 2024-08-06 at 19.17.07_d6da4b83.jpg" alt="Ankush's Photo" class="profile-img" >
+                <p>Hi, I'm Ankush. I have completed my B.Tech in Computer Science Engineering in 2024 with a GPA of 7.68 from Punjab Technical University. I completed my 10th and 12th from Kendriya Vidyalaya No.1 (AFS) Pathankot.</p>
+                <p>I have undergone training at Solitary Infosys, Mohali, and IGEN Edutronics, Pathankot. Currently, I am pursuing an internship at Test Yantra, Bengaluru.</p>
+                <p>I have worked on several projects, including a Brick Breaker game, a Hospital Management System, and an Employee Management System. I am proficient in Java, MySQL, Advanced Java, Spring, ReactJS, Hibernate, HTML, CSS, and JavaScript. I am fluent in Hindi, English, and Punjabi.</p>
+                <p>I am passionate about learning new technologies and applying them to solve real-world problems. My strong foundation in computer science principles, combined with hands-on experience in software development, has equipped me with the skills needed to excel in the tech industry. I am particularly interested in backend development and enjoy working with databases and server-side technologies. I am a quick learner and thrive in collaborative environments where I can contribute to innovative projects. In my free time, I like to read tech blogs, participate in coding challenges, and contribute to open-source projects. I believe in continuous improvement and am always looking for opportunities to grow both personally and professionally. My goal is to work with a dynamic team where I can further develop my skills and make a significant impact in the field of software development.</p>
+            </div>
+        </section>
+        <section id="projects">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="project" onclick="showModal('brick-breaker')">
+                    <h3>Brick Breaker Game</h3>
+                    <p>Developed a Brick Breaker game using Java. The game features different levels and increasing difficulty. It helped me enhance my problem-solving skills and understanding of game development.</p>
+                </div>
+                <div class="project" onclick="showModal('hospital-management')">
+                    <h3>Hospital Management System</h3>
+                    <p>Created a comprehensive Hospital Management System using Java, MySQL, and Spring. This system manages patient records, appointments, and billing, streamlining the hospital's operations.</p>
+                </div>
+                <div class="project" onclick="showModal('employee-management')">
+                    <h3>Employee Management System</h3>
+                    <p>Developed an Employee Management System as a college project using Java and MySQL. This system tracks employee information, attendance, and performance evaluations.</p>
+                </div>
+            </div>
+        </section>
+        <section id="skills">
+            <div class="container">
+                <h2>Skills</h2>
+                <div class="skills-bar">
+                    <div class="skill">
+                        <span>Java</span>
+                        <div class="skill-bar" style="width: 90%;"></div>
+                    </div>
+                    <div class="skill">
+                        <span>MySQL</span>
+                        <div class="skill-bar" style="width: 80%;"></div>
+                    </div>
+                    <div class="skill">
+                        <span>Advanced Java</span>
+                        <div class="skill-bar" style="width: 85%;"></div>
+                    </div>
+                    <div class="skill">
+                        <span>Spring</span>
+                        <div class="skill-bar" style="width: 75%;"></div>
+                    </div>
+                    <div class="skill">
+                        <span>ReactJS</span>
+                        <div class="skill-bar" style="width: 70%;"></div>
+                    </div>
+                    <div class="skill">
+                        <span>Hibernate</span>
+                        <div class="skill-bar" style="width: 80%;"></div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML</span>
+                        <div class="skill-bar" style="width: 95%;"></div>
+                    </div>
+                    <div class="skill">
+                        <span>CSS</span>
+                        <div class="skill-bar" style="width: 90%;"></div>
+                    </div>
+                    <div class="skill">
+                        <span>JavaScript</span>
+                        <div class="skill-bar" style="width: 85%;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="experience">
+            <div class="container">
+                <h2>Experience</h2>
+                <div class="experience">
+                    <h3>Intern at Test Yantra, Bengaluru</h3>
+                    <p>Currently working as an intern at Test Yantra, where I am gaining hands-on experience in software development and testing.</p>
+                </div>
+                <div class="experience">
+                    <h3>Training at Solitary Infosys, Mohali</h3>
+                    <p>Completed training at Solitary Infosys, where I worked on various Java-based projects and enhanced my programming skills.</p>
+                </div>
+                <div class="experience">
+                    <h3>Training at IGEN Edutronics, Pathankot</h3>
+                    <p>Underwent training at IGEN Edutronics, focusing on advanced Java concepts and real-world applications.</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <form id="contact-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="phone">Phone:</label>
+                    <input type="text" id="phone" name="phone" value="6280137285" readonly>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+                <p>Email: <a href="mailto:ankushratu859@gmail.com">ankushratu859@gmail.com</a></p>
+                <p>Phone: 6280137285</p>
+                <p>GitHub: <a href="https://github.com/Ankuahratu" target="_blank">Ankuahratu</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/ankush-8894aa266" target="_blank">ankush-8894aa266</a></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Ankush. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="modal" class="modal">c
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal()">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+        </div>
+    </div>
+    <script src="/portfolio/script.js"></script>
+</body>
+</html>
