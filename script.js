@@ -40,10 +40,18 @@ document.getElementById('contact-form').addEventListener('submit', function (eve
     const message = document.getElementById('message').value;
 
     if (name && email && message) {
-        alert('Thank you for your message, ' + name + '! I will get back to you shortly.');
-        // Here you would typically send the form data to your server
-        // For demonstration purposes, we'll just clear the form
-        document.getElementById('contact-form').reset();
+        emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', {
+            from_name: name,
+            from_email: email,
+            to_email: 'ankushratu859@gmail.com',
+            message: message
+        })
+        .then(function(response) {
+            alert('Thank you for your message, ' + name + '! I will get back to you shortly.');
+            document.getElementById('contact-form').reset();
+        }, function(error) {
+            alert('Failed to send message. Please try again.');
+        });
     } else {
         alert('Please fill out all fields.');
     }
